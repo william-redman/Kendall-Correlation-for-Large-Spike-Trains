@@ -1,6 +1,6 @@
 # Kendall-Correlation-for-Large-Spike-Trains
-A method for quickly calculating the Kendall correlation for large spike trains based on the method presented in the paper "A Fast Method for Calculating Kendall Correlations of Lagre, Sparse Spike Trains" William T. Redman 2018. 
+A method for quickly calculating the Kendall correlation for large spike trains based on the method presented in the paper "An O(n) Method for Calculating Kendall Correlations of Spike Trains" William T. Redman 2018. 
 
-This method can be (depending on the exact sparseness and size of the spike trains) several hundred times faster than traditional approaches (see the above paper for the specific run time analysis).
+This method, unlike Knight's method which is O(n ln n) (Knight 1966), is O(n). We have shown it to be around 50x faster for various neurally plausible sparseness regimes (and, for spike trains in the tens of thousands of elements long, tens of thousands of times of faster than MATLAB's O(n^2) implementation. 
 
 If you use this method in your research, please consider citing the paper.
